@@ -1,43 +1,37 @@
 package com.solvd.database;
 
+import java.time.LocalDate;
+import java.util.List;
+
 public abstract class Vehicle implements Fixable{
 
-    private String type;
-    private String model;
-    private String color;
-    private Double engineVolume;
+    private Integer id;
+    private String vin;
     private String numbers;
+    private LocalDate manufactureYear;
+    private List<Model> models;
 
-    public Vehicle(String type, String model, String color, Double engineVolume, String numbers) {
-        this.type = type;
-        this.model = model;
-        this.color = color;
-        this.engineVolume = engineVolume;
+    public Vehicle(Integer id, String vin, String numbers, LocalDate manufactureYear) {
+        this.id = id;
+        this.vin = vin;
         this.numbers = numbers;
+        this.manufactureYear = manufactureYear;
     }
 
-    public String getType() {
-        return type;
+    public Integer getId() {
+        return id;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getModel() {
-        return model;
+    public String getVin() {
+        return vin;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
+    public void setVin(String vin) {
+        this.vin = vin;
     }
 
     public String getNumbers() {
@@ -48,12 +42,20 @@ public abstract class Vehicle implements Fixable{
         this.numbers = numbers;
     }
 
-    public Double getEngineVolume() {
-        return engineVolume;
+    public LocalDate getManufactureYear() {
+        return manufactureYear;
     }
 
-    public void setEngineVolume(Double engineVolume) {
-        this.engineVolume = engineVolume;
+    public void setManufactureYear(LocalDate manufactureYear) {
+        this.manufactureYear = manufactureYear;
+    }
+
+    public List<Model> getModels() {
+        return models;
+    }
+
+    public void setModels(List<Model> models) {
+        this.models = models;
     }
 
     @Override

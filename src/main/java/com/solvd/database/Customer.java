@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Customer {
 
+    private Integer id;
     private String fName;
     private String lName;
     private String phoneNumber;
@@ -15,6 +16,14 @@ public class Customer {
         this.lName = lName;
         this.phoneNumber = phoneNumber;
         this.vehicle = vehicle;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getfName() {
@@ -49,8 +58,8 @@ public class Customer {
         this.vehicle = vehicle;
     }
 
-    public void chooseService(Company company, Services service){
-        List<Services> servicesChosen = new ArrayList<>();
+    public void chooseService(CarServiceShop company, Catalogue service){
+        List<Catalogue> servicesChosen = new ArrayList<>();
         for(int i=0; i<servicesChosen.size(); i++){
             servicesChosen.add(service);
         }

@@ -2,17 +2,26 @@ package com.solvd.database;
 
 import java.util.List;
 
-public class Company {
+public class CarServiceShop {
 
+    private Integer id;
     private String name;
     private String address;
     private Double price;
     private List<Employee> employees;
-    private List<Services> services;
+    private List<Catalogue> services;
 
-    public Company(String name, String address) {
+    public CarServiceShop(String name, String address) {
         this.name = name;
         this.address = address;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -35,7 +44,7 @@ public class Company {
         return price;
     }
 
-    public void setPrice(Services s,Double price) {
+    public void setPrice(Catalogue s, Double price) {
         this.price = price;
     }
 
@@ -47,15 +56,15 @@ public class Company {
         this.employees = employees;
     }
 
-    public List<Services> getServices() {
+    public List<Catalogue> getServices() {
         return services;
     }
 
-    public void setServices(List<Services> services) {
+    public void setServices(List<Catalogue> services) {
         this.services = services;
     }
 
-    public List<Services> provideService(Customer customer){
+    public List<Catalogue> provideService(Customer customer){
         return services;
     }
 }

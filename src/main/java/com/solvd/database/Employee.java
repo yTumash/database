@@ -4,16 +4,25 @@ import java.time.LocalDate;
 
 public class Employee {
 
+    private Integer id;
     private String firstName;
     private String lastName;
     private LocalDate dob;
-    private Position position;
     private Integer experience;
+    private Position position;
 
     public Employee(String firstName, String lastName, LocalDate dob) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = dob;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getFirstName() {
