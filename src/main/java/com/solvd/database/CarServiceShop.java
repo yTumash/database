@@ -4,7 +4,7 @@ import java.util.List;
 
 public class CarServiceShop {
 
-    private Integer id;
+    private Long id;
     private String name;
     private String address;
     private Double price;
@@ -16,11 +16,11 @@ public class CarServiceShop {
         this.address = address;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -64,7 +64,4 @@ public class CarServiceShop {
         this.services = services;
     }
 
-    public List<Catalogue> provideService(Customer customer){
-        return services;
-    }
 }

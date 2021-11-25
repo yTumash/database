@@ -3,26 +3,26 @@ package com.solvd.database;
 import java.time.LocalDate;
 import java.util.List;
 
-public abstract class Vehicle implements Fixable{
+public abstract class Vehicle{
 
-    private Integer id;
+    private Long id;
     private String vin;
     private String numbers;
     private LocalDate manufactureYear;
     private List<Model> models;
 
-    public Vehicle(Integer id, String vin, String numbers, LocalDate manufactureYear) {
+    public Vehicle(Long id, String vin, String numbers, LocalDate manufactureYear) {
         this.id = id;
         this.vin = vin;
         this.numbers = numbers;
         this.manufactureYear = manufactureYear;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -58,43 +58,4 @@ public abstract class Vehicle implements Fixable{
         this.models = models;
     }
 
-    @Override
-    public void maintain() {
-
-    }
-
-    @Override
-    public void fixBody() {
-
-    }
-
-    @Override
-    public void fixElectronicTools() {
-
-    }
-
-    @Override
-    public void restore() {
-
-    }
-
-    @Override
-    public void paint() {
-
-    }
-
-    @Override
-    public void changeOil() {
-
-    }
-
-    @Override
-    public void addAntifreeze() {
-
-    }
-
-    @Override
-    public void changeAirFilter() {
-
-    }
 }

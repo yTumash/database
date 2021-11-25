@@ -5,41 +5,40 @@ import java.util.List;
 
 public class Customer {
 
-    private Integer id;
-    private String fName;
-    private String lName;
+    private Long id;
+    private String firstName;
+    private String lastName;
     private String phoneNumber;
-    private Vehicle vehicle;
+    private List<Vehicle> vehicles;
 
-    public Customer(String fName, String lName, String phoneNumber, Vehicle vehicle) {
-        this.fName = fName;
-        this.lName = lName;
+    public Customer(String firstName, String lastName, String phoneNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.vehicle = vehicle;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getfName() {
-        return fName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setfName(String fName) {
-        this.fName = fName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getlName() {
-        return lName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setlName(String lName) {
-        this.lName = lName;
+    public void setLastName(String lName) {
+        this.lastName = lastName;
     }
 
     public String getPhoneNumber() {
@@ -50,18 +49,12 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-    public Vehicle getVehicle() {
-        return vehicle;
+    public List<Vehicle> getVehicles() {
+        return vehicles;
     }
 
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
+    public void setVehicles(List<Vehicle> vehicles) {
+        this.vehicles = vehicles;
     }
 
-    public void chooseService(CarServiceShop company, Catalogue service){
-        List<Catalogue> servicesChosen = new ArrayList<>();
-        for(int i=0; i<servicesChosen.size(); i++){
-            servicesChosen.add(service);
-        }
-    }
 }

@@ -1,22 +1,25 @@
 package com.solvd.database;
 
+import java.util.List;
+
 public class City {
 
-    private Integer id;
+    private Long id;
     private String postalCode;
     private String name;
+    private List<CarServiceShop> carServiceShops;
 
-    public City(Integer id, String postalCode, String name) {
+    public City(Long id, String postalCode, String name) {
         this.id = id;
         this.postalCode = postalCode;
         this.name = name;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

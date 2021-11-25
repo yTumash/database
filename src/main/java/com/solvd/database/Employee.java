@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Employee {
 
-    private Integer id;
+    private Long id;
     private String firstName;
     private String lastName;
     private LocalDate dob;
@@ -17,11 +17,11 @@ public class Employee {
         this.dob = dob;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
