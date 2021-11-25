@@ -7,7 +7,6 @@ public class CarServiceShop {
     private Long id;
     private String name;
     private String address;
-    private Double price;
     private List<Employee> employees;
     private List<Catalogue> services;
 
@@ -38,14 +37,6 @@ public class CarServiceShop {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Catalogue s, Double price) {
-        this.price = price;
     }
 
     public List<Employee> getEmployees() {

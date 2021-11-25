@@ -1,10 +1,13 @@
 package com.solvd.database;
 
+import java.util.List;
+
 public class Task {
 
     private Long id;
     private String name;
     private Double price;
+    private List<Catalogue> catalogues;
 
     public Long getId() {
         return id;
@@ -28,5 +31,13 @@ public class Task {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public List<Catalogue> getCatalogues() {
+        return catalogues;
+    }
+
+    public void setCatalogues(List<Catalogue> catalogues) {
+        this.catalogues = catalogues;
     }
 }
