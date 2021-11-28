@@ -1,15 +1,14 @@
 package com.solvd.database;
 
 import java.time.LocalDate;
-import java.util.List;
 
-public abstract class Vehicle{
+public class Vehicle{
 
     private Long id;
     private String vin;
     private String numbers;
     private LocalDate manufactureYear;
-    private List<Model> models;
+    private Model model;
 
     public Vehicle(Long id, String vin, String numbers, LocalDate manufactureYear) {
         this.id = id;
@@ -50,12 +49,11 @@ public abstract class Vehicle{
         this.manufactureYear = manufactureYear;
     }
 
-    public List<Model> getModels() {
-        return models;
+    public Model getModel() {
+        return model;
     }
 
-    public void setModels(List<Model> models) {
-        this.models = models;
+    public void setModel(Model model) {
+        this.model = model;
     }
-
 }

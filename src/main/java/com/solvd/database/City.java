@@ -38,4 +38,12 @@ public class City {
     public void setName(String name) {
         this.name = name;
     }
+
+    public List<CarServiceShop> getCarServiceShops() {
+        return carServiceShops;
+    }
+
+    public void setCarServiceShops(List<CarServiceShop> carServiceShops) {
+        this.carServiceShops = carServiceShops;
+    }
 }

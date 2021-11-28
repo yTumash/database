@@ -1,6 +1,5 @@
 package com.solvd.database;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
